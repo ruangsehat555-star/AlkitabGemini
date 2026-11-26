@@ -22,7 +22,7 @@ export default async function handler(req, res) {
     return res.status(500).json({
       error: "Environment variable ALKITAB_API_KEY belum diatur di Vercel."
     });
-  }
+  } 
 
   const kitabRaw = String((req.query && req.query.kitab) || "Yohanes").trim();
   const pasal = String((req.query && req.query.pasal) || "3").trim();
